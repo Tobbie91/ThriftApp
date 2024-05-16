@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'Sora';
     src: 
-         url('../fonts/sora/Sora-Bold.ttf') format('truetype');
+         url('../fonts/sora/Sora-Regular.ttf') format('truetype');
     /* Add more src lines for additional font file formats
     url('../fonts/sora/Sora-Regular.ttf') format('regular'), */
   }
@@ -123,4 +123,28 @@
   
   #image.fade-in {
     animation: fadeIn 1s ease-in-out forwards;
+  }
+
+
+
+
+
+  .transition-transform {
+    transition-property: transform;
+  }
+
+  .ease-in-out {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+ .indicator {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+  .indicator.active {
+    background-color: #ffffff;
   }
